@@ -30,6 +30,8 @@
 		CCB31A952A70A99C005080A0 /* CoinDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB31A942A70A99C005080A0 /* CoinDetailModel.swift */; };
 		CCB31A972A70AB21005080A0 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB31A962A70AB21005080A0 /* DetailViewModel.swift */; };
 		CCB31A992A70AB58005080A0 /* CoinDetailDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB31A982A70AB58005080A0 /* CoinDetailDataService.swift */; };
+		CCB31A9B2A71F7F3005080A0 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB31A9A2A71F7F3005080A0 /* ChartView.swift */; };
+		CCB31A9D2A71FCFC005080A0 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB31A9C2A71FCFC005080A0 /* Date.swift */; };
 		CCCA63582A673AB800A92824 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCA63572A673AB800A92824 /* HomeViewModel.swift */; };
 		CCCA635B2A674CC300A92824 /* CoinDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCA635A2A674CC300A92824 /* CoinDataService.swift */; };
 		CCCA635E2A6759A800A92824 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCA635D2A6759A800A92824 /* NetworkingManager.swift */; };
@@ -71,6 +73,8 @@
 		CCB31A942A70A99C005080A0 /* CoinDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailModel.swift; sourceTree = "<group>"; };
 		CCB31A962A70AB21005080A0 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		CCB31A982A70AB58005080A0 /* CoinDetailDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailDataService.swift; sourceTree = "<group>"; };
+		CCB31A9A2A71F7F3005080A0 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		CCB31A9C2A71FCFC005080A0 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		CCCA63572A673AB800A92824 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		CCCA635A2A674CC300A92824 /* CoinDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDataService.swift; sourceTree = "<group>"; };
 		CCCA635D2A6759A800A92824 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
@@ -145,6 +149,7 @@
 				CC2A65E52A6618BB0044ACDE /* PreviewProvider.swift */,
 				CC2A65E72A661F520044ACDE /* Double.swift */,
 				CCCA636A2A6A7F2500A92824 /* UIApplication.swift */,
+				CCB31A9C2A71FCFC005080A0 /* Date.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -233,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				CCB31A902A709552005080A0 /* DetailView.swift */,
+				CCB31A9A2A71F7F3005080A0 /* ChartView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -371,6 +377,7 @@
 				CCB31A8C2A6F6497005080A0 /* HapticManager.swift in Sources */,
 				CCCA63692A6A764500A92824 /* SearchBarView.swift in Sources */,
 				CC17A8922A636F2D007C7E65 /* CircleButtonAnimationView.swift in Sources */,
+				CCB31A9B2A71F7F3005080A0 /* ChartView.swift in Sources */,
 				CCCA63712A6B096000A92824 /* HomeStatsView.swift in Sources */,
 				CCCA63752A6B392300A92824 /* MarketDataService.swift in Sources */,
 				CC2A65E62A6618BB0044ACDE /* PreviewProvider.swift in Sources */,
@@ -378,6 +385,7 @@
 				CCB31A8A2A6F5512005080A0 /* PortfolioContainer.xcdatamodeld in Sources */,
 				CC2A65E82A661F520044ACDE /* Double.swift in Sources */,
 				CCB31A752A6DF353005080A0 /* PortfolioView.swift in Sources */,
+				CCB31A9D2A71FCFC005080A0 /* Date.swift in Sources */,
 				CC2A65E22A64BF650044ACDE /* CoinModel.swift in Sources */,
 				CCCA63652A68B36400A92824 /* CoinImageService.swift in Sources */,
 				CCB31A7E2A6F42AD005080A0 /* PorttfolioDataService.swift in Sources */,
