@@ -14,6 +14,7 @@ struct CryptoTrackerApp: App {
     
     init(){
         UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor(Color.theme.tint)]
+        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor(Color.theme.tint)]
     }
     
     var body: some Scene {
@@ -23,6 +24,7 @@ struct CryptoTrackerApp: App {
                     .toolbar(.hidden, for: .navigationBar)
             }
             .environmentObject(vm)
+            .tint(Color.theme.tint)
         }
     }
 }

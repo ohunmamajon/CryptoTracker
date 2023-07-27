@@ -113,8 +113,13 @@ extension HomeView {
     private var portfolioCoinList: some View {
         List{
             ForEach(vm.portfolioCoins) { coin in
-                CoinRowView(coin: coin, showHoldingsColumn: true)
-                    .listRowInsets(.init(top: 10, leading: 0, bottom: 10, trailing: 10))
+                
+                MyLazyNavigationLink {
+                    DetailView(coin: coin)
+                } label: {
+                    CoinRowView(coin: coin, showHoldingsColumn: true)
+                        .listRowInsets(.init(top: 10, leading: 0, bottom: 10, trailing: 10))
+                }
             }
         }
         .listStyle(.plain)

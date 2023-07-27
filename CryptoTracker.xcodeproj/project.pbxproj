@@ -32,6 +32,7 @@
 		CCB31A992A70AB58005080A0 /* CoinDetailDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB31A982A70AB58005080A0 /* CoinDetailDataService.swift */; };
 		CCB31A9B2A71F7F3005080A0 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB31A9A2A71F7F3005080A0 /* ChartView.swift */; };
 		CCB31A9D2A71FCFC005080A0 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB31A9C2A71FCFC005080A0 /* Date.swift */; };
+		CCB31A9F2A720D76005080A0 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB31A9E2A720D76005080A0 /* String.swift */; };
 		CCCA63582A673AB800A92824 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCA63572A673AB800A92824 /* HomeViewModel.swift */; };
 		CCCA635B2A674CC300A92824 /* CoinDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCA635A2A674CC300A92824 /* CoinDataService.swift */; };
 		CCCA635E2A6759A800A92824 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCA635D2A6759A800A92824 /* NetworkingManager.swift */; };
@@ -75,6 +76,7 @@
 		CCB31A982A70AB58005080A0 /* CoinDetailDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailDataService.swift; sourceTree = "<group>"; };
 		CCB31A9A2A71F7F3005080A0 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		CCB31A9C2A71FCFC005080A0 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		CCB31A9E2A720D76005080A0 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		CCCA63572A673AB800A92824 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		CCCA635A2A674CC300A92824 /* CoinDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDataService.swift; sourceTree = "<group>"; };
 		CCCA635D2A6759A800A92824 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				CC2A65E72A661F520044ACDE /* Double.swift */,
 				CCCA636A2A6A7F2500A92824 /* UIApplication.swift */,
 				CCB31A9C2A71FCFC005080A0 /* Date.swift */,
+				CCB31A9E2A720D76005080A0 /* String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCB31A9F2A720D76005080A0 /* String.swift in Sources */,
 				CCCA636D2A6AECCD00A92824 /* StatisticModel.swift in Sources */,
 				CCCA635B2A674CC300A92824 /* CoinDataService.swift in Sources */,
 				CCB31A772A6DF3BA005080A0 /* CoinLogoView.swift in Sources */,

@@ -36,7 +36,13 @@ class DetailViewModel: ObservableObject {
                }
                .store(in: &cancellables)
            
-
+           coinDetailService.$coinDetails
+                      .sink { [weak self] (returnedCoinDetails) in
+                          self?.coinDescription = returnedCoinDetails?.readableDescription
+                          self?.websiteURL = returnedCoinDetails?.links?.homepage?.first
+                          self?.redditURL = returnedCoinDetails?.links?.subredditURL
+                      }
+                      .store(in: &cancellables)
            
        }
        

@@ -34,7 +34,7 @@ struct DetailView: View {
                     additionalTitle
                     Divider()
                     additionalGrid
-                    websiteSection
+                   websiteSection
                 }
                 .padding()
             }
@@ -108,7 +108,7 @@ extension DetailView {
                             .fontWeight(.bold)
                             .padding(.vertical, 4)
                     })
-                    .accentColor(.blue)
+                    .foregroundColor(Color.blue)
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
             }
@@ -142,19 +142,20 @@ extension DetailView {
     }
     
     private var websiteSection: some View {
-        VStack(alignment: .leading, spacing: 20) {
+        HStack(alignment: .center, spacing: 20) {
+        
             if let websiteString = vm.websiteURL,
                let url = URL(string: websiteString) {
                 Link("Website", destination: url)
             }
             
+            
             if let redditString = vm.redditURL,
                let url = URL(string: redditString) {
                 Link("Reddit", destination: url)
             }
-            
         }
-        .accentColor(.blue)
+        .foregroundColor(Color.blue)
         .frame(maxWidth: .infinity, alignment: .leading)
         .font(.headline)
     }
