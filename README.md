@@ -5,6 +5,7 @@
    ## - Navigation links and Lists
    ## - Custom Views
    ## - MVVM 
+   ## - Line Chart
    ## - Core Data & Persistence
    ## - Animations
 
