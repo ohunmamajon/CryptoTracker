@@ -13,6 +13,7 @@ struct HomeView: View {
     
     @State private var showPortfolio : Bool = false
     @State private var showPortfolioView: Bool = false
+    @State private var showSettingsView: Bool = false
     
     var body: some View {
         ZStack{
@@ -50,6 +51,9 @@ struct HomeView: View {
                 
                 Spacer()
             }
+            .sheet(isPresented: $showSettingsView) {
+                SettingsView()
+            }
         }
     }
 }
@@ -73,6 +77,8 @@ extension HomeView {
                 .onTapGesture {
                     if showPortfolio {
                         showPortfolioView.toggle()
+                    } else {
+                        showSettingsView.toggle()
                     }
                 }
                 .background(
@@ -99,11 +105,14 @@ extension HomeView {
     private var allCoinsList: some View {
         List{
             ForEach(vm.allCoins) { coin in
-                MyLazyNavigationLink {
-                    DetailView(coin: coin)
-                } label: {
-                    CoinRowView(coin: coin, showHoldingsColumn: false)
-                        .listRowInsets(.init(top: 10, leading: 0, bottom: 10, trailing: 10))
+                CoinRowView(coin: coin, showHoldingsColumn: false)
+                    .listRowInsets(.init(top: 10, leading: 0, bottom: 10, trailing: 10))
+                .overlay {
+                    MyLazyNavigationLink {
+                        DetailView(coin: coin)
+                    } label: {
+                        EmptyView()
+                    }
                 }
             }
         }
@@ -113,16 +122,20 @@ extension HomeView {
     private var portfolioCoinList: some View {
         List{
             ForEach(vm.portfolioCoins) { coin in
-                
-                MyLazyNavigationLink {
-                    DetailView(coin: coin)
-                } label: {
-                    CoinRowView(coin: coin, showHoldingsColumn: true)
-                        .listRowInsets(.init(top: 10, leading: 0, bottom: 10, trailing: 10))
+            
+                CoinRowView(coin: coin, showHoldingsColumn: true)
+                    .listRowInsets(.init(top: 10, leading: 0, bottom: 10, trailing: 10))
+                .overlay {
+                    MyLazyNavigationLink {
+                        DetailView(coin: coin)
+                    } label: {
+                        EmptyView()
+                    }
                 }
             }
         }
         .listStyle(.plain)
+        
     }
     private var columnTitles: some View {
         HStack(spacing: 4){

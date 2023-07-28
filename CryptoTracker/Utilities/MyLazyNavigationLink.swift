@@ -26,6 +26,7 @@ public struct MyLazyNavigationLink<Label: View, Destination: View>: View {
         } label: {
             label()
         }
+        .opacity(0)
     }
 
     private struct LazyView<Content: View>: View {
