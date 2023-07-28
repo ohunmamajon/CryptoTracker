@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CC17A8752A635ACB007C7E65 /* CryptoTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC17A8742A635ACB007C7E65 /* CryptoTrackerApp.swift */; };
-		CC17A8772A635ACB007C7E65 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC17A8762A635ACB007C7E65 /* ContentView.swift */; };
 		CC17A87C2A635AD9007C7E65 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC17A87B2A635AD9007C7E65 /* Preview Assets.xcassets */; };
 		CC17A8862A635D6A007C7E65 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC17A8852A635D6A007C7E65 /* Color.swift */; };
 		CC17A88C2A636301007C7E65 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC17A88B2A636301007C7E65 /* HomeView.swift */; };
@@ -55,7 +54,6 @@
 /* Begin PBXFileReference section */
 		CC17A8712A635ACB007C7E65 /* CryptoTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC17A8742A635ACB007C7E65 /* CryptoTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTrackerApp.swift; sourceTree = "<group>"; };
-		CC17A8762A635ACB007C7E65 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CC17A87B2A635AD9007C7E65 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CC17A8852A635D6A007C7E65 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		CC17A88B2A636301007C7E65 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -134,7 +132,6 @@
 				CCCA63592A674C4B00A92824 /* Services */,
 				CC2A65E02A64BF410044ACDE /* Models */,
 				CC17A8872A63626D007C7E65 /* Core */,
-				CC17A8762A635ACB007C7E65 /* ContentView.swift */,
 				CC17A8742A635ACB007C7E65 /* CryptoTrackerApp.swift */,
 				CCB31A722A6DF194005080A0 /* Images.xcassets */,
 				CC17A87A2A635AD9007C7E65 /* Preview Content */,
@@ -391,7 +388,6 @@
 				CCB31A992A70AB58005080A0 /* CoinDetailDataService.swift in Sources */,
 				CC2A65E42A6618210044ACDE /* CoinRowView.swift in Sources */,
 				CCCA63582A673AB800A92824 /* HomeViewModel.swift in Sources */,
-				CC17A8772A635ACB007C7E65 /* ContentView.swift in Sources */,
 				CC17A88C2A636301007C7E65 /* HomeView.swift in Sources */,
 				CCCA63732A6B32FB00A92824 /* MarketDataModel.swift in Sources */,
 				CC17A8752A635ACB007C7E65 /* CryptoTrackerApp.swift in Sources */,

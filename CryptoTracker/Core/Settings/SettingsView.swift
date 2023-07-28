@@ -38,7 +38,7 @@ struct SettingsView: View {
                 }
             }
             .font(.headline)
-            .listStyle(GroupedListStyle())
+            .listStyle(.plain)
             .navigationTitle("Settings")
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {

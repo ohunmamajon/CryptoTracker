@@ -45,8 +45,15 @@ struct HomeView: View {
                     }
                 }
                 if showPortfolio {
-                    portfolioCoinList
-                        .transition(.move(edge: .trailing))
+                    
+                    ZStack(alignment: .top) {
+                        if vm.portfolioCoins.isEmpty  && vm.searchText.isEmpty {
+                            portfolioEmptyText
+                        } else{
+                            portfolioCoinList
+                                .transition(.move(edge: .trailing))
+                        }
+                    }
                 }
                 
                 Spacer()
@@ -107,6 +114,7 @@ extension HomeView {
             ForEach(vm.allCoins) { coin in
                 CoinRowView(coin: coin, showHoldingsColumn: false)
                     .listRowInsets(.init(top: 10, leading: 0, bottom: 10, trailing: 10))
+                    .listRowBackground(Color.theme.background)
                 .overlay {
                     MyLazyNavigationLink {
                         DetailView(coin: coin)
@@ -125,6 +133,7 @@ extension HomeView {
             
                 CoinRowView(coin: coin, showHoldingsColumn: true)
                     .listRowInsets(.init(top: 10, leading: 0, bottom: 10, trailing: 10))
+                    .listRowBackground(Color.theme.background)
                 .overlay {
                     MyLazyNavigationLink {
                         DetailView(coin: coin)
@@ -137,6 +146,16 @@ extension HomeView {
         .listStyle(.plain)
         
     }
+    
+    private var portfolioEmptyText : some View {
+        Text("You have no added coins in your portfolio. Click the + button to add 🧐")
+            .font(.callout)
+            .foregroundColor(Color.theme.tint)
+            .fontWeight(.medium)
+            .multilineTextAlignment(.center)
+            .padding(50)
+    }
+    
     private var columnTitles: some View {
         HStack(spacing: 4){
             HStack(spacing: 4) {

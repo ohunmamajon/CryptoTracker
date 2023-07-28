@@ -16,6 +16,7 @@ struct CryptoTrackerApp: App {
     init(){
         UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor(Color.theme.tint)]
         UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor(Color.theme.tint)]
+        UITableView.appearance().backgroundColor = UIColor.clear
     }
     
     var body: some Scene {

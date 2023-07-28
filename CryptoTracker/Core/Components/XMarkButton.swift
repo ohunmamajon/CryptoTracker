@@ -13,7 +13,6 @@ import SwiftUI
     var body: some View {
         Button(action: {
             dismiss?()
-            print("Dismiss called")
         }, label: {
             Image(systemName: "xmark")
                 .font(.headline)
