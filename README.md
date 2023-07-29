@@ -13,10 +13,6 @@
 # API Integration: 
    Successfully integrated various APIs to fetch real-time data, ensuring users receive up-to-date information and enhancing the overall user experience.
 
-# Multithreading Optimization: 
-   Implemented multithreading techniques such as Grand Central Dispatch (GCD) and OperationQueues to perform time-consuming tasks, such as network calls and data processing, in the 
-   background. This ensured a smooth user experience and prevented UI freezing during resource-intensive operations.
-
 # Aesthetically Pleasing Interface & Animations: 
    Designed a visually appealing user interface with meticulous attention to detail, creating an intuitive and aesthetically pleasing app. Integrated engaging animations to provide a 
    delightful and interactive user experience.
